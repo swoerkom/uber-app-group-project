@@ -1,0 +1,15 @@
+DEPENDENCIES
+  nginx
+    git: https://github.com/swoerkom/group-project-nginx-cookbook.git
+    revision: ff5034aeab59ceb87790c029df5544ba9b9d1dec
+  python
+    git: https://github.com/swoerkom/group-project-python-cookbook.git
+    revision: 0163ece0977f2c847b6ce665b063a441c64bb26f
+  uber-app
+    path: .
+    metadata: true
+
+GRAPH
+  nginx (0.1.0)
+  python (0.1.0)
+  uber-app (0.1.0)
