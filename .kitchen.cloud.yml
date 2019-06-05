@@ -1,11 +1,7 @@
----
 driver_config:
   name: ec2
-  region: eu-west-2
-  require_chef_omnibus: true
+  region: eu-west-1
   instance_type: t2.micro
-  associate_public_ip: true
-  chef_license: accept-no-persist
 
 provisioner:
   name: chef_zero
