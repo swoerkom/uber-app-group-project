@@ -1,11 +1,9 @@
 driver:
   name: ec2
-  aws_access_key: ""
-  aws_secret_key: ""
   region: eu-west-1
   instance_type: t2.micro
   require_chef_omnibus: true
-  associate_public_ip: true
+  subnet_id: subnet-0e9b6138ff1ce18f2
 
 provisioner:
   name: chef_zero
@@ -24,8 +22,6 @@ verifier:
 
 platforms:
   - name: ubuntu-18.04
-    driver:
-      box: ubuntu/xenial64
 
 suites:
   - name: default
