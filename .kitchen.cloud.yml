@@ -1,6 +1,6 @@
 driver_config:
   name: ec2
-  region: eu-west-1
+  region: eu-west-2
   instance_type: t2.micro
   associate_public_ip: true
   require_chef_omnibus: true
