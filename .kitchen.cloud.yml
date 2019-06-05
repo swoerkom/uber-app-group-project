@@ -5,10 +5,11 @@ driver:
   require_chef_omnibus: true
   instance_type: t2.micro
   associate_public_ip: true
-
+  chef_license: accept-no-persist
 
 verifier:
   name: inspec
+  chef_license: accept-no-persist
 
 platforms:
 - name: ubuntu-18.04
@@ -22,4 +23,5 @@ suites:
   verifier:
     inspec_tests:
       - test/integration/default
+    chef_license: accept-no-persist 
 attributes:
