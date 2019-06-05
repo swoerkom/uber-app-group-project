@@ -2,8 +2,6 @@ driver:
   name: ec2
   region: eu-west-1
   instance_type: t2.micro
-  require_chef_omnibus: true
-  subnet_id: subnet-0e9b6138ff1ce18f2
 
 provisioner:
   name: chef_zero
