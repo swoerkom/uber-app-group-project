@@ -10,21 +10,6 @@ def adding_requirements
   cd /home/ubuntu/app
   HEREDOC
   command += <<~HEREDOC
-  export LC_ALL=C
-  HEREDOC
-  command += <<~HEREDOC
-  pip install -r ./requirements.txt
-  HEREDOC
-  command += <<~HEREDOC
-  pip install flask
-  HEREDOC
-  command += <<~HEREDOC
-  pip install flask_sslify
-  HEREDOC
-  command += <<~HEREDOC
-  pip install rauth
-  HEREDOC
-  command += <<~HEREDOC
   python app.py
   HEREDOC
 

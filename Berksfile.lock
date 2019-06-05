@@ -1,0 +1,32 @@
+DEPENDENCIES
+  node
+    git: https://github.com/qamaraden/nginx-reverse-proxy-7000.git
+    revision: adeec7504201efb38e41df220a1ab840c39381ee
+  python
+    git: https://github.com/swoerkom/group-project-python-cookbook.git
+    revision: c82c0eed342ab606d006f1383b2deafce0409b58
+  uber
+    path: .
+    metadata: true
+
+GRAPH
+  ark (4.0.0)
+    build-essential (>= 0.0.0)
+    seven_zip (>= 0.0.0)
+  build-essential (8.2.1)
+    mingw (>= 1.1)
+    seven_zip (>= 0.0.0)
+  mingw (2.1.0)
+    seven_zip (>= 0.0.0)
+  node (0.1.0)
+    nodejs (~> 5.0.0)
+  nodejs (5.0.0)
+    ark (>= 2.0.2)
+    build-essential (>= 0.0.0)
+  python (0.1.0)
+  seven_zip (3.1.1)
+    windows (>= 0.0.0)
+  uber (0.1.0)
+    node (>= 0.0.0)
+    python (>= 0.0.0)
+  windows (6.0.0)
