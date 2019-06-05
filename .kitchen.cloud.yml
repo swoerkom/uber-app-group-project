@@ -6,6 +6,8 @@ driver:
   instance_type: t2.micro
   associate_public_ip: true
   chef_license: accept-no-persist
+  product_name: chef
+  product_version: 14.12.3
 
 verifier:
   name: inspec
@@ -23,5 +25,5 @@ suites:
   verifier:
     inspec_tests:
       - test/integration/default
-    chef_license: accept-no-persist 
+    chef_license: accept-no-persist
 attributes:
