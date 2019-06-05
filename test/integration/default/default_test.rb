@@ -20,7 +20,6 @@ describe package 'python-pip' do
   it { should be_installed }
 end
 
-
 describe package 'python3' do
   it { should be_installed }
 end
@@ -32,4 +31,8 @@ end
 
 describe file("/etc/python3/requirements.txt") do
   it { should exist }
- end
+end
+
+describe file("/etc/nginx/sites-available/proxy.conf") do
+ it { should exist }
+end
