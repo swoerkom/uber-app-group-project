@@ -1,26 +1,26 @@
-driver_config:
-  name: ec2
-  region: eu-west-1
-  aws_access_key_id: <%= ENV['AWS_ACCESS_KEY_ID'] %>
-  aws_secret_access_key: <%= ENV['AWS_SECRET_ACCESS_KEY'] %>
-  require_chef_omnibus: true
-  instance_type: t2.micro
-  associate_public_ip: true
-  chef_license: accept-no-persist
+---
+  driver:
+    name: ec2
+    region: eu-west-2
+    require_chef_omnibus: true
+    instance_type: t2.micro
+    subnet_id: subnet-0e9b6138ff1ce18f2
+    associate_public_ip: true
 
-verifier:
-  name: inspec
 
-platforms:
-  - name: ubuntu-18.04
+  verifier:
+    name: inspec
+
+  platforms:
+    name: ubuntu-16.04
     driver:
       box: ubuntu/xenial64
 
-suites:
-  - name: default
+  suites:
+    name: default
     run_list:
       - recipe[uber::default]
     verifier:
       inspec_tests:
         - test/integration/default
-    attributes:
+  attributes:
