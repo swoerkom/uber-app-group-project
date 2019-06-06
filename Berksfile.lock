@@ -4,7 +4,7 @@ DEPENDENCIES
     revision: adeec7504201efb38e41df220a1ab840c39381ee
   python
     git: https://github.com/swoerkom/group-project-python-cookbook.git
-    revision: c82c0eed342ab606d006f1383b2deafce0409b58
+    revision: 2ca01e67a1369bbd0abe59e4618977706d58a9bb
   uber
     path: .
     metadata: true
