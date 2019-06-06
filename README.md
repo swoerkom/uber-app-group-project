@@ -11,7 +11,7 @@ You should start by cloning this repo into a new directory;
 
 `cd UberApp`
 
-`git clone git@github.com:Y-Ali/latest_uber_project.git`
+`git clone`
 
 `git pull origin master`
 
